@@ -1,0 +1,21 @@
+{
+  "name": "electron-photobombth",
+  "productName": "Photobombth",
+  "version": "1.0.0",
+  "description": "Photobooth app",
+  "main": "src/main.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,css,html}\"",
+    "build": "rimraf Photobombth-* && electron-packager . --platform=darwin,win32,linux --arch=x64 --icon=app",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Nakul Sharma",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-packager": "^15.1.0",
+    "electron-prebuilt": "^1.4.13",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2"
+  }
+}
